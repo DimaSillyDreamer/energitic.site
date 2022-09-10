@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(203, 185, 180);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container {
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: khaki;
+    padding: 10px;
+}
+
+label {
+    display: inline;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+#id_t_indoor, #id_t_outdoor {
+    width: 45px;
+    height: 30px; 
+    font-size: 15px; 
+}
+#id_volume {
+    height: 30px;
+    width: 158px;
+    font-size: 15px; 
+}
+#id_house, #button {
+    height: 36px;
+    width: 166px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 15px; 
+    background-color: white;
+    border-width: 1px;
+}
+input {
+    display: block;
+}
+
+select {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px; 
+}
+
+#button {
+    margin-top: 10px;
+    font-weight: 900;
+}
+
+h1 {
+    text-align: center;
+}
+

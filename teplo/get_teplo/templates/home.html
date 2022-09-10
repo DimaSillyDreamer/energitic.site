@@ -1,0 +1,42 @@
+{% extends 'base.html' %}{% load static %} {% block title %}Главная страница
+моего блога{% endblock %}
+{% block content %}
+<main id="mainhome">
+  <section id="mainbanner">
+    <figure id="logo">
+      <h1 id="logotext">energetic<span id="point">.</span>site</h1>
+    </figure>
+  </section>
+  <section id="id_hitext" class="hitext">
+      
+        <p>Добро пожаловать на ENERGETIC.SITE! Здесь Вы найдёте полезные Инструменты для подбора энергетического оборудования (котлы жаротрубные и водотрубные, горелки, насосы, оборудование для водоочистки и водоподготовки), справочные материалы, интересные статьи и новости из мира энергетики!</p>
+        
+  </section>  
+  
+  <section id="cardtool">
+    <a href="instruments" class="cardhref"><div id="tooltext" class="cards">
+      <p class="cardtitle">Инструменты</p>
+      <p class="cardtext">Калькуляторы для подбора оборудования.</p>
+    </div></a>
+  </section>
+  <section id="cardnews">
+    <a href="news" class="cardhref"><div id="newstext" class="cards">
+      <p class="cardtitle">Новости</p>
+      <p class="cardtext">Интересные новости из мира энергетики.</p>
+    </div></a>
+  </section>
+  <section id="cardarticles">
+    <a href="articles" class="cardhref"><div id="articlestext" class="cards">
+      <p class="cardtitle">Статьи</p>
+      <p class="cardtext">Полезные статьи и справочные материалы.</p>
+    </div></a>
+  </section>
+  <section id="cardlists">
+    <a href="questionnaires" class="cardhref"><div id="listtext" class="cards">
+      <p class="cardtitle">Опросные листы</p>
+      <p class="cardtext">Опросные листы для подбора оборудования.</p>
+    </div></a>
+  </section>
+  
+</main>
+{% endblock %}

@@ -1,0 +1,105 @@
+
+
+body {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    display: inline;
+    margin-top: 5px;
+    border-color: black;
+}
+
+input {
+    display: block;
+    text-align: center;
+    height: 30px;
+    width: 165px;
+    
+}
+
+label {
+    display: inline;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+#id_t_indoor, #id_t_outdoor {
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+}
+
+select {
+    display: block;
+    width: 165px;
+    height: 30px;
+    border-radius: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    font-size: 15px;
+}
+
+option {
+    border-radius: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    width: 165px;
+}
+
+#button {
+    border-radius: 0px;
+    height: 30px;
+    color: black;
+    margin-top: 5px;
+    width: 155px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    border-width: 1px;
+    background-color: white;
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 19px;
+}
+
+
+
+a, button {
+    border-radius: 0px;
+    height: 30px;
+    color: black;
+    margin-top: 5px;
+    width: 155px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    border-width: 1px;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.table {
+    background-color: rgb(217, 237, 103);
+    border-width: 10px;
+    margin: 10px;
+    border-color: black;
+    padding: 15px;
+}
+
+#id_volume {
+    height: 30px;
+    width: 165px;
+}

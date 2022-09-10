@@ -1,0 +1,38 @@
+{% extends 'base.html' %}{% load static %} {% block title %}расчет тепла{% endblock %}
+{% block content %}
+<main id="main_heat">
+<section class="calc_section" id="id_heat_calc">
+  <h1 class="calc_title">Укрупненный расчет затрат тепла на отопление и вентиляцию.</h1>
+  <div class="divider"></div>
+  <form action="" method="post" name="heat_form" id="heat_form">
+    {% csrf_token %} {{ form }}
+
+    <button class="button_calc" type="submit" value="Рассчитать">Рассчитать</button>
+    {% if total %}
+    <div class="divider"></div>
+    <h2 class="calc_resul">Результат</h2>
+    <h5 class="result">Расход тепла на отопление: {{res1}} кВт</h5>
+    <h5 class="result">Расход тепла на вентиляцию: {{res2}} кВт</h5>
+    <h5 class="result">Общий раскод тепла: <br><br><b>{{total}} кВт</b></h5>
+    
+
+    {% endif %}  
+
+    <div class="divider"></div>
+    <h5 class="disclaimer">
+      Результат вычислений является приблизительным и может потребовать
+      корректировки при проектировании. Для
+      получения подробной консультации и технико-коммерческого предложения
+      <a href="#">напишите</a> нам или позвоните по телефону:
+      <a
+        href="tel:+7
+          (495) 77-594-77"
+        >+7 (495) 77-594-77</a
+      >
+      .
+    </h5>
+  </form>
+</section>
+{% include 'side_calc.html' %}
+</main>
+{% endblock %}

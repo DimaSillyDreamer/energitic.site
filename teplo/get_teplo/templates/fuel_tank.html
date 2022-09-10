@@ -1,0 +1,37 @@
+{% extends 'base.html' %}{% load static %} {% block title %}Калькулятор расхода топлива на отопление.{% endblock %}
+{% block content %}
+<main id="main_tank">
+    <section class="calc_section" id="id_fuel_tank_calc">
+        <h1 class="calc_title">Калькулятор склада резервного топлива (дизель).</h1>
+            <div class="divider"></div>
+            <form action="" method="post" name="fuel_tank_calc" id="fuel_tank_calc">
+                {% csrf_token %} {{ form }}
+            
+                <button class="button_calc" type="submit" value="Рассчитать">Рассчитать</button>
+                {% if tank_volume %}
+                <div class="divider"></div>
+                <h2 class="calc_resul">Результат</h2>
+                <h5 class="result">Объём склада дизельного топлива:  <br><br><b>{{tank_volume}} м³</b></h5>
+                
+            
+                {% endif %}  
+            
+                <div class="divider"></div>
+                <h5 class="disclaimer">
+                  Результат вычислений является приблизительным и может потребовать
+                  корректировки при проектировании. Для
+                  получения подробной консультации и технико-коммерческого предложения
+                  <a href="#">напишите</a> нам или позвоните по телефону:
+                  <a
+                    href="tel:+7
+                      (495) 77-594-77"
+                    >+7 (495) 77-594-77</a
+                  >
+                  .
+                
+                    </h5>
+                </form>
+    </section>
+    {% include 'side_calc.html' %}
+    </main>
+{% endblock %}

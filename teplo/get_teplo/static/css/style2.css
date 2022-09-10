@@ -1,0 +1,429 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1612457634_38-p-fon-serii-metall-54.jpg');
+    background-position: center;
+    
+}
+
+#mainpagebody {
+    display: grid;
+    grid-template-areas: "n "
+                         "m "
+                         "f ";
+    height: 100vh;
+    grid-template-rows: 1fr 10fr 0.5fr;
+}
+
+#navi {
+    grid-area: n;
+}
+#foot {
+    grid-area: f;
+}
+#mainhome {
+    grid-area: m;
+    display: grid;
+    grid-template-areas:". hi hi hi hi ."
+                        "s t  t  t  t ."
+                        "s i  i  o  o ."
+                        "s a  a  n  n .";
+    
+    width: 100%;
+    grid-template-columns: 2.5fr 2fr 2fr 2fr 2fr 2fr; 
+    grid-template-rows: auto;
+    gap: 1em;           
+}
+
+#mainbanner {
+    grid-area: hi;
+    margin-top: 15px;
+}
+
+
+#cardtool {
+    grid-area: i;
+}
+
+#cardnews {
+    grid-area: n;
+}
+
+#cardarticles {
+    grid-area: a;
+}
+
+#cardlists {
+    grid-area: o;
+}
+
+#sidenews {
+    grid-area: s;
+}
+
+#logotext {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 56px;
+    width: 350px;
+    
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px solid #F2CC0F;
+    box-shadow: 8px 9px 9px 2px rgba(0,0,0,0.29);
+    transform: rotate(2deg);
+}  
+
+.cards {
+    box-shadow: 8px 9px 9px 2px rgba(0,0,0,0.29);
+    border: 2px solid black;
+    background-color: #F2F2F2;
+    margin-bottom: 0.5em;
+    padding: 0.3em;
+}
+
+.side {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.side:hover {
+    color: red;
+}
+
+#sidetext {
+    margin-left: 2em;
+    
+    background-color: #F2CC0F;
+    text-align: center;
+    box-shadow: 8px 9px 9px 2px rgba(0,0,0,0.29);
+    
+}
+
+.cardtitle {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+    
+}
+
+.cardtext {
+    text-align: center;
+}
+
+#icon {
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 5px solid #F2CC0F;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 0.02em;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#iconhref {
+    text-decoration: none;
+    width: 47px;
+}
+
+#point {
+    color: red;
+}
+
+.navigation {
+    margin-top: 1em;
+    height: 3em;
+}
+
+.navhref {
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    
+    
+}
+
+.navhref:hover {
+    color: red;
+}
+
+.cardhref:hover {
+    color: red;
+}
+
+.cardhref {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+
+}
+
+.card-img-top {
+    width: 90%;
+}
+
+#sidenewstitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+.divider {
+    border: 2px solid black;
+    color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#id_hitext {
+     
+    grid-area: t;  
+}
+
+.hitext {
+    background-color: #F2F2F2;
+    padding: 0.5em;
+    border: 2px solid black; 
+}
+
+
+footer {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 49.9%, black 49.9%, black 60%, rgba(0, 0, 0, 0) 60%) 
+              fixed,
+              linear-gradient(45deg, black 10%, rgba(0, 0, 0, 0) 10%) 
+              fixed;
+    background-size: 8em 8em;
+    height: 2em;
+    background-color:#F2CC0F;
+    box-shadow: inset 2px 11px 13px 3px rgba(0,0,0,0.39);
+}
+
+#textfooter {
+    margin-right: 0;
+    margin-left: auto;
+    background-color: black;
+    height: 100%;
+    padding-top: 0.1;
+    width: 11em;
+    text-align: center;
+    box-shadow: inset 2px 11px 13px 3px rgba(0,0,0,0.39);
+    border: 0.1em solid #F2CC0F;
+    border-radius: 10px;
+    
+    
+}
+
+#id_footerhref {
+    text-decoration: none;
+    color: #F2CC0F; 
+    text-transform: uppercase;
+    height: 100%;
+    font-size: 0.7em;
+   
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#instrumentspage {
+    grid-area: m;
+    display: grid;
+    grid-template-areas:". hi hi hi hi ."
+                        ". t  t  n  n ."
+                        ". f  f  d  d ."
+                        ". .  .  .  . .";
+    
+    width: 100%;
+    grid-template-columns: 2.5fr 2fr 2fr 2fr 2fr 2.5fr; 
+    grid-template-rows: 1fr 1fr 1fr auto;
+    gap: 1em;
+} 
+
+#hiins {
+    grid-area: hi;
+}
+
+#fuel_calc_card {
+    grid-area: f;
+}
+
+#heat_calc_card {
+    grid-area: t;
+   
+}
+
+#fuel_tanc_calc_card {
+    grid-area: d;
+}
+
+#pump_calc_card {
+    grid-area: n;
+    
+}
+
+#main_heat, #main_pump, #main_fuel, #main_tank {
+    grid-area: m;
+    display: grid;
+    grid-template-areas: 'side heat .'
+                         '.     .   .';
+    grid-template-columns: 2fr 2fr 2fr;  
+    grid-template-rows: 2fr 0.1fr auto;
+    margin-top: 2em;                 
+}
+
+#id_heat_calc, #id_pump_calc, #id_fuel_calc, #id_fuel_tank_calc {
+
+    grid-area: heat;
+    background-color: #F2F2F2;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+input, select {
+    display: block;
+    
+
+}
+
+select {
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: 0.2px solid black;
+    
+}
+
+ 
+
+#id_volume, #id_email {
+    width: 205px;
+}
+
+option {
+    width: 100%;
+    text-align: center;
+    
+}
+
+#id_t_outdoor, #id_t_indoor {
+    width: 5em;
+    text-align: center;
+}
+
+#id_house, #id_fuel {
+    width: 204.5px;
+    height: 30px;
+}
+
+.calc_title {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.button_calc {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: #F2CC0F;
+    color: black;
+}
+
+.side_calc_href {
+    text-decoration: none;
+    color: black;
+   
+    display: block;
+}
+
+.side_calc {
+    grid-area: side;
+    margin-left: 1.5em;
+}
+
+.side_title_calc {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+
+.h1_text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media only screen and (max-device-width: 600px) {
+    #mainpagebody {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas: 
+        'n'
+        'm'
+        'f';
+        
+    }
+    #mainhome {
+        grid-area: m;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'hi'
+                            't'
+                             'i'
+                             'n'
+                             'a'
+                             'o';
+        max-width: 100%;
+    }
+
+    #foot {
+        max-width: 100%;
+    }
+    #sidenews {
+        display: none;
+    }
+
+    #navi {
+        max-width: 100%;
+        height: 56px;
+        -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+        -moz-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+        box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+        margin-top: 0;
+        background-color: #F2CC0F;
+    }
+
+    #contact {
+        margin: 5px;
+    }
+
+    #mainpage {
+        margin: 5px;
+    }
+   
+}
+
+.calc_section {
+    min-width: 300px;
+}

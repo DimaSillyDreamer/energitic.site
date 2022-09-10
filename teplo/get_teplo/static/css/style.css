@@ -1,0 +1,319 @@
+
+
+body {
+    background-image: url('https://kartinkin.net/uploads/posts/2021-01/1610923925_10-p-belii-neitralnii-fon-17.jpg');
+    background-position: center;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+
+.container {        
+    grid-area: a1;
+    background-color: white;
+    max-width: 550px;
+    border-radius: 20px;
+    margin-top: 50px;
+    -webkit-box-shadow: 12px 8px 18px -5px rgba(120, 187, 161, 0.6); 
+    -moz-box-shadow: 12px 8px 18px -5px rgba(120, 187, 161, 0.6); 
+    box-shadow: 12px 8px 18px -5px rgba(120, 187, 161, 0.6);
+    -webkit-box-shadow: -12px -13px 22px -4px rgba(120, 187, 161, 0.6) inset; 
+    -moz-box-shadow: -12px -13px 22px -4px rgba(120, 187, 161, 0.6) inset; 
+    box-shadow: -12px -13px 22px -4px rgba(120, 187, 161, 0.6) inset;
+    opacity: 0.9;
+   
+}
+
+label {
+    display: inline;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+#id_t_indoor, #id_t_outdoor {
+    width: 55px;
+    height: 30px; 
+    font-size: 15px; 
+}
+
+#id_volume {
+    height: 30px;
+    width: 209px;
+    font-size: 15px; 
+}
+
+#id_house, #button {
+    height: 30px;
+    width: 209px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 15px; 
+    background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+}
+input {
+    display: block;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(243, 240, 240);
+    -webkit-box-ordinal-group: initial;
+   
+}
+.option {
+    font-size: 23px; 
+}
+
+select {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px; 
+    background-color: white;
+    
+}
+
+
+#button {
+    margin-top: 10px;
+    font-weight: 900;
+   
+    
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+#id_email {
+    height: 30px;
+    width: 209px;
+}
+
+.btn {
+    margin-bottom: 20px;
+    margin-top: 24px;
+    background-color: rgb(236, 189, 85);
+    border-color: black;
+    color: black;
+}
+
+.btn:hover {
+    background-color: crimson;
+    border-color: black;
+    color: black;
+}
+
+form {
+    margin: 10px;
+}
+
+.divider {
+    width: auto;
+    height: 2px;
+    background-color: black;
+}
+
+.sidebar {   
+    grid-area: 2 / 2 / 3 / 3; 
+    background-color: white;   
+}
+
+
+   
+
+.container1 {
+    grid-area: header;
+   
+    height: 60px;
+    border-radius: 5px;
+}
+
+footer {
+    grid-area: footer;
+   
+    
+}
+.footer {
+    height: 50%;
+    margin-bottom: 0px;
+}
+
+#tools, #tool1 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container3 {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        '. a1 . a2 .'
+        'footer footer footer footer footer';
+    grid-template-rows: 20px auto 20px;
+    grid-template-columns: 400px auto 100px auto 400px;
+    grid-gap: 10px;
+    min-height: 90vh;
+    
+}
+
+.card1 {
+    grid-area: a1;
+    
+    
+    border-radius: 15px;
+    
+    margin-top: 20px;
+    background-color: white;
+    width: 150px;
+    height: 180px;
+    -webkit-box-shadow: -1px -1px 15px 2px rgba(34, 60, 80, 0.6) inset; 
+    -moz-box-shadow: -1px -1px 15px 2px rgba(34, 60, 80, 0.6) inset; 
+    box-shadow: -1px -1px 15px 2px rgba(34, 60, 80, 0.6) inset;
+    align-self: center;
+    justify-self: center;
+    border: 0.1px solid black;
+}
+
+.card2 {
+    grid-area: a2;
+  
+    border-radius: 15px;
+   
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+    margin-top: 20px;
+    background-color: white;
+    width: 150px;
+    height: 180px;
+    -webkit-box-shadow: -1px -1px 15px 2px rgba(34, 60, 80, 0.6) inset; 
+    -moz-box-shadow: -1px -1px 15px 2px rgba(34, 60, 80, 0.6) inset; 
+    box-shadow: -1px -1px 15px 2px rgba(34, 60, 80, 0.6) inset;
+    align-self: center;
+    justify-self: center;
+    border: 0.1px solid black;
+    
+}
+
+#toolshome, #articles {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.card-text {
+    margin-left: 5px;
+    
+}
+
+.divider1 {
+    width: 90%;
+    background-color: black;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+    .container3 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px auto auto 50px auto 20px;
+        grid-template-areas: 
+        'header'
+        'a1'
+        'a2'
+        '.'
+        '.'
+        'footer';
+        
+    }
+    .container {
+        margin-top: 30px;
+        border-radius: 0px;
+        opacity: 0.9;
+    }
+}
+
+#newcount {
+    margin-top: 0px;
+}
+
+#book {
+    height: 153px;
+}
+
+#main, #registration {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.card3 {
+    width: 18rem;
+    height: 15rem;
+    background-color: grey;
+    border: 1px solid black;
+    grid-area: c4;
+
+
+}
+
+.container4 {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: '. s c4 c5'
+                         '. s c6 c7';
+    
+}
+
+.card4 {
+    grid-area: c5;
+}
+
+.card5 {
+    grid-area: c6;
+}
+
+.card6 {
+    grid-area: c7;
+}
+
+
+.side {
+    grid-area: s;
+}

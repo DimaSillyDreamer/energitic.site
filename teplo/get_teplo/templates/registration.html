@@ -1,0 +1,18 @@
+{% extends 'base.html' %}{% load static %} {% block title %}Регистрация{% endblock %}
+{% block content %} 
+<div class="container">
+    {% for message in messages %}
+    <h3>{{ message }}</h3>
+    {% endfor %}
+<form action="registration" method="post">
+    {% csrf_token %} 
+    {{ form }}
+
+<input class="btn btn-primary" type="submit" value="Отправить" />
+</form>
+</div>
+
+   
+
+
+{% endblock %}

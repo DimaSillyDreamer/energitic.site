@@ -1,0 +1,34 @@
+{% extends 'base.html' %}{% load static %} {% block title %}Главная страница
+моего блога{% endblock %}
+{% block content %}
+<main id="instrumentspage">
+    <section id="hiins" class="hitext">
+        <h1 id="hiinstext" >Инструменты</h1>
+        <p id="textinspage">Используя представленные калькуляторы Вы можете подобрать энергетическое оборудование по минимумальному количеству параметров. Все вычисления приблизительны. Для качественного подбора оборудования обратитесь к профессионалам.</p>
+    </section>
+    <section id="heat_calc_card" >
+        <a href="heat-calc" class="cardhref"><div class="cards">
+            <p class="cardtitle">Калькулятор тепловой мощности</p>
+           
+          </div></a>
+    </section>
+    <section id="pump_calc_card" >
+        <a href="pump-calc" class="cardhref"><div class="cards">
+            <p class="cardtitle">Калькулятор подбора насоса</p>
+            
+          </div></a>
+    </section>
+    <section id="fuel_calc_card" >
+        <a href="fuel-calc" class="cardhref"><div  class="cards">
+            <p class="cardtitle">Калькулятор расхода топлива</p>
+            
+          </div></a>
+    </section>
+    <section id="fuel_tanc_calc_card" >
+        <a href="fuel-tank" class="cardhref"><div  class="cards">
+            <p class="cardtitle">Калькулятор склада топлива</p>
+            
+          </div></a>
+    </section>
+</main>
+{% endblock %}

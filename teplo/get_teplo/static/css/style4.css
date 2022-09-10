@@ -1,0 +1,437 @@
+
+
+#navi {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    min-height: 50px;
+    width: 100%;
+    justify-content: flex-start; 
+    z-index: 1; 
+    background-color: white;    
+}
+
+#mainpagebody {
+    margin-top: 90px; 
+    margin-bottom: 70px;  
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+
+nav > ul {
+    display: flex;
+    align-items: center;    
+    width: 100%;
+    justify-content: flex-start;
+    
+    margin: 0;
+   
+    flex-direction: row;
+    
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: white;
+   
+}
+
+@media screen and (max-width: 600px) {
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        gap: 5px;
+    }
+    
+    #iconhref {
+        display: none;
+    }
+   
+   
+    #contact {
+       padding-top: 20px;
+        
+    }  
+
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #mainbanner {
+        margin-top: 40px;
+    }
+
+    #mainhome, #instrumentspage {     
+        width: 100%;      
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    #mainpagebody {      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hitext {
+        
+       width: 335px;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    #cardlists, #fuel_tanc_calc_card {
+        margin-bottom: 10px;
+    }
+    
+    #instrumentspage {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 300px) {
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    
+    #iconhref {
+        display: none;
+    }
+    #mainpage {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #contact,  #mainpage  {
+        padding-left: 0px;
+        
+    }  
+
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #mainbanner {
+        margin-top: 40px;
+    }
+
+    #mainhome, #instrumentspage {     
+       
+        width: 275px;     
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    #mainpagebody {      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hitext {
+        
+       width: 260px;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    #cardlists, #fuel_tanc_calc_card {
+        margin-bottom: 10px;
+    }
+    
+    #instrumentspage {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        width: 260px;   
+        
+        text-align: center;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+        font-family: 'Courier New', Courier, monospace;
+        
+        background-color: white;
+        border: 0.5px dashed black;
+        -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+        -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+        box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    }
+
+    #logotext {
+        border: 0.5px solid black;
+        width: 260px;
+       
+        z-index: 0;
+        text-align: center;
+        font-size: 1.5em;
+        color:black;
+        font-weight: 900;
+        -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+        -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+        box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    }
+
+
+
+}
+
+li {
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#iconhref {
+   border: 0.5px solid black;
+   -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+   -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+   box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+   padding: 2px; 
+}
+
+
+
+footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    z-index: 1;
+    background-color: white;
+    height: 35px;
+    
+}
+
+#logo {    
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+#logotext {
+    border: 0.5px solid black;
+    width: 310px;
+   
+    z-index: 0;
+    text-align: center;
+    font-size: 2.2em;
+    color:black;
+    font-weight: 900;
+    -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+}
+
+#mainhome {
+    display: flex;
+    max-width: 800px;
+
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+#main_heat {
+    display: flex;
+    max-width: 550px;
+
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: white;
+    
+}
+
+.cards {
+    width: 335px;   
+    min-width: 200px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    background-color: white;
+    border: 0.5px dashed black;
+    -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+}
+
+.cards:hover {
+    background-color: grey;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.hitext {
+    background-color: white;
+    padding: 15px;
+    text-align: center;    
+    min-width: 200px;
+    max-width: 700px;
+    border: .5px dashed black;
+    -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+}
+
+.cardtitle {
+   
+    font-size: 1.5em;
+}
+
+.cardtext {
+    font-size: 1em;
+}
+
+#instrumentspage {
+    display: flex;
+    max-width: 800px;
+
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#contact, #mainpage {
+    -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    padding: 2px ;
+    border: 0.5px solid black;
+}
+
+#contact:hover, #mainpage:hover, #iconhref:hover  {
+    background-color: grey;
+    color: white;
+}
+
+#id_footerhref {
+    border: 0.5px solid black;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    padding: 2px; 
+}
+
+form {
+    font-size: 1.5em;
+}
+
+.button_calc {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1);
+    -moz-box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    box-shadow: 12px 12px 0px -5px rgba(109, 109, 106, 1); 
+    background-color: white;
+    border: 0.5px solid black;
+    
+}
+
+.button_calc:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+input {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: normal;
+    border-radius: 0px; 
+    -webkit-appearance: none;
+}
+
+select {
+    display: block;
+    width: 236px;
+    height: 36px;
+    line-height: normal;
+    border-radius: 0px; 
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+option {
+    text-align: center;
+}
+
+
